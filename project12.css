@@ -16,12 +16,10 @@ body {
 header .left ,
 header .right {
     width: 50%;
-    /* border: 1px solid; */
 }
 
 header .container .content {
     height: 100px;
-    /* border: 1px solid; */
     display: flex;
 }
 
@@ -66,7 +64,6 @@ header .container .content .right .menu .menu_bar {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 5px;
     display: none;
-    /* z-index: -1; */
 }
 
 
@@ -154,8 +151,6 @@ header .container .content .right nav ul li:last-child::before {
 
 .main{
     height: 100%;
-    /* background-color: red; */
-    /* cursor: pointer; */
     display: flex;
     flex-direction: column-reverse;
 }
@@ -163,14 +158,12 @@ header .container .content .right nav ul li:last-child::before {
 
 .main .left {
     height: 50%;
-    /* border: 1px solid gray; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .main .right {
     height: 50%;
-    /* border: 1px solid gray; */
     display: flex;
     justify-content: center;
     align-items: center;
