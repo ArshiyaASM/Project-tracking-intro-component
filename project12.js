@@ -25,6 +25,5 @@ window.addEventListener("resize" , e => {
             open_bar.src = "../image/icon-hamburger.svg";
             open_bar.classList.toggle("close_bar");
         }   
-        
     }
 })
