@@ -1,0 +1,231 @@
+* {
+    padding: unset;
+    margin: unset;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    z-index: -1;
+}
+
+
+
+header .left ,
+header .right {
+    width: 50%;
+    /* border: 1px solid; */
+}
+
+header .container .content {
+    height: 100px;
+    /* border: 1px solid; */
+    display: flex;
+}
+
+
+header .container .content .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px;
+}
+
+header .container .content .left img {
+    cursor: pointer;
+}
+
+
+header .container .content .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+}
+
+header .container .content .right .menu {
+    position: relative;
+}
+
+header .container .content .right .menu  img {
+    cursor: pointer;
+}
+
+header .container .content .right .menu .menu_bar {
+    position: fixed;
+    top: 100px;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    height: 300px;
+    width:75%;
+    padding: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 5px;
+    display: none;
+    /* z-index: -1; */
+}
+
+
+header .container .content .right .menu .menu_bar ul {
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+
+header .container .content .right .menu .menu_bar ul li{
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+header .container .content .right .menu .menu_bar ul li:last-child {
+    border-top: 1px solid lightgray;
+    height: 120%;
+    color: gray;
+}
+
+
+header .container .content .right .menu .menu_bar ul li:hover {
+    text-decoration: underline;
+}
+
+
+header .container .content .right nav ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 12px;
+}
+
+header .container .content .right nav ul li {
+    margin: 0px 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: none;
+}
+
+header .container .content .right nav ul li:hover {
+    text-decoration: underline;
+}
+
+header .container .content .right nav ul li:last-child {
+    color: gray;
+    margin-left: 50px;
+}
+
+
+
+header .container .content .right nav ul li:last-child::before {
+    content: " ";
+    background-color: gray;
+    height: 7px;
+    width: 7px;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    right: 30px;
+}
+
+
+
+.bg {
+    position: absolute;
+    top: 0px;
+    right: -600px;
+    background-color: rgba(175, 181, 187, 0.4);
+    height: 700px;
+    width: 1000px;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    opacity: 75%;
+    z-index: -1;
+}
+
+
+.main{
+    height: 100%;
+    /* background-color: red; */
+    /* cursor: pointer; */
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.main .left {
+    height: 50%;
+    /* border: 1px solid gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .right {
+    height: 50%;
+    /* border: 1px solid gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .right img {
+    width: 90%;
+}
+
+
+
+
+.main .left .text_content span {
+    display: inline-block;
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.main .left .text_content h1{
+    margin: 20px 0px;
+}
+
+.main .left .text_content p:nth-of-type(1) {
+    color: gray;
+    letter-spacing: 5px;
+}
+
+
+.main .left .text_content p:nth-of-type(2) {
+    margin-bottom: 50px;
+}
+
+
+.main .left .text_content .btn #btn1 {
+    border: unset;
+    background-color: rgb(238, 41, 19);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main .left .text_content .btn #btn1:hover {
+    background-color: rgb(238, 110, 96);
+}
+
+
+.main .left .text_content .btn #btn2 {
+    border: unset;
+    background-color: transparent;
+    color: gray;
+    margin: 0px 10px;
+    cursor: pointer;
+}
