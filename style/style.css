@@ -53,6 +53,7 @@ header .container .content .right .menu  img {
 
 header .container .content .right .menu .menu_bar {
     position: fixed;
+    z-index: 2;
     top: 100px;
     margin: auto;
     left: 0px;
@@ -175,6 +176,7 @@ header .container .content .right nav ul li:last-child::before {
 
 .main .right img {
     position: absolute;
+    z-index: -1;
     width: 600px;
     right: -40%;
 }
