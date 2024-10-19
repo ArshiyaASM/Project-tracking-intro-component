@@ -176,7 +176,7 @@ header .container .content .right nav ul li:last-child::before {
 
 .main .right img {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     width: 600px;
     right: -40%;
 }
