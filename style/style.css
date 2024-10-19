@@ -76,7 +76,7 @@ header .container .content .right .menu .menu_bar ul {
 }
 
 header .container .content .right .menu .menu_bar ul li{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -169,12 +169,20 @@ header .container .content .right nav ul li:last-child::before {
     align-items: center;
 }
 
+.main .right {
+    position: relative;
+}
+
 .main .right img {
-    width: 90%;
+    position: absolute;
+    width: 600px;
+    right: -40%;
 }
 
 
-
+.main .left .text_content {
+    font-size: 14px;
+}
 
 .main .left .text_content span {
     display: inline-block;
@@ -182,12 +190,12 @@ header .container .content .right nav ul li:last-child::before {
     color: white;
     padding: 10px;
     border-radius: 20px;
-    font-size: 12px;
     text-align: center;
 }
 
 .main .left .text_content h1{
     margin: 20px 0px;
+    font-size: 20px;
 }
 
 .main .left .text_content p:nth-of-type(1) {
